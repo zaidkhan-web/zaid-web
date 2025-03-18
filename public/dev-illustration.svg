@@ -1,0 +1,13 @@
+<!-- Create a placeholder for dev-illustration.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <rect width="400" height="400" fill="#f0f0f0" />
+  <circle cx="200" cy="150" r="80" fill="#d1d5db" />
+  <rect x="120" y="250" width="160" height="120" rx="20" fill="#d1d5db" />
+  <circle cx="160" cy="130" r="10" fill="#4b5563" />
+  <circle cx="240" cy="130" r="10" fill="#4b5563" />
+  <path d="M160 180 Q200 210 240 180" stroke="#4b5563" stroke-width="5" fill="none" />
+  <rect x="170" y="280" width="60" height="20" rx="5" fill="#3b82f6" />
+  <rect x="140" y="310" width="120" height="5" rx="2" fill="#9ca3af" />
+  <rect x="160" y="325" width="80" height="5" rx="2" fill="#9ca3af" />
+  <rect x="170" y="340" width="60" height="5" rx="2" fill="#9ca3af" />
+</svg>

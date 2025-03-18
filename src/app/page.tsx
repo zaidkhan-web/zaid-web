@@ -1,11 +1,10 @@
-import ThemeToggle from "@/components/ui/ThemeToggle";
+import HeroSection from "@/components/Sections/HeroSection/HeroSection";
 
 const HomePage = () => {
   return (
-    <div>
-      HomePage
-      <ThemeToggle />
-    </div>
+    <>
+      <HeroSection />
+    </>
   );
 };
 export default HomePage;
