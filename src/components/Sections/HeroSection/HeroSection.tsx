@@ -75,7 +75,7 @@ const HeroSection = () => {
       aria-label="Hero Section"
     >
       <div className="">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-12">
+        <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-12">
           {/* Left column: Text content */}
           <div className="w-full md:w-1/2 flex flex-col space-y-6">
             <motion.p
@@ -187,7 +187,7 @@ const HeroSection = () => {
               </motion.a>
 
               <motion.a
-                href="https://facebook.com"
+                href="https://www.facebook.com/profile.php?id=100025428540842"
                 target="_blank"
                 rel="noopener noreferrer"
                 variants={socialItemVariants}

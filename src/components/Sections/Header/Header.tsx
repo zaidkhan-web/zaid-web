@@ -20,11 +20,11 @@ import ThemeToggle from "@/components/ui/ThemeToggle";
 
 const navItems = [
   { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
-  { name: "Projects", href: "/projects" },
-  { name: "Skills", href: "/skills" },
-  { name: "Experience", href: "/experience" },
-  { name: "Contact", href: "/contact" },
+  { name: "About", href: "#about" },
+  { name: "Projects", href: "#projects" },
+  { name: "Skills", href: "#skills" },
+  { name: "Experience", href: "#experience" },
+  { name: "Contact", href: "#contact" },
 ];
 
 const Header = () => {
@@ -126,25 +126,26 @@ const Header = () => {
                     {navItems.map((item, index) => {
                       const isActive = pathname === item.href;
                       return (
-                        <Link
-                          key={item.name}
-                          href={item.href}
-                          className={`relative py-4 px-2 ${
-                            index !== navItems.length - 1
-                              ? "border-b border-border/50"
-                              : ""
-                          } 
+                        <SheetTrigger key={item.name} asChild>
+                          <Link
+                            href={item.href}
+                            className={`relative py-4 px-2 ${
+                              index !== navItems.length - 1
+                                ? "border-b border-border/50"
+                                : ""
+                            } 
                             flex items-center transition-all duration-200 ${
                               isActive
                                 ? "text-primary font-medium bg-primary/5"
                                 : "text-foreground opacity-80 hover:opacity-100 hover:bg-muted/50"
                             }`}
-                        >
-                          {isActive && (
-                            <span className="absolute left-0 top-0 bottom-0 w-1 bg-primary rounded-r-full" />
-                          )}
-                          <span className="ml-2">{item.name}</span>
-                        </Link>
+                          >
+                            {isActive && (
+                              <span className="absolute left-0 top-0 bottom-0 w-1 bg-primary rounded-r-full" />
+                            )}
+                            <span className="ml-2">{item.name}</span>
+                          </Link>
+                        </SheetTrigger>
                       );
                     })}
                   </nav>
