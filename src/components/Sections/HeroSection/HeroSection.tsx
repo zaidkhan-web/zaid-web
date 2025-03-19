@@ -214,7 +214,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
@@ -231,7 +231,7 @@ const HeroSection = () => {
   const [delta, setDelta] = useState(150);
 
   useEffect(() => {
-    let timer;
+    const timer;
 
     const tick = () => {
       const currentTech = technologies[currentTechIndex];
