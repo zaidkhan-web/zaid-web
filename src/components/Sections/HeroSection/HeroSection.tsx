@@ -192,7 +192,7 @@ const HeroSection = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 rounded-full blur-xl opacity-70 dark:opacity-30 animate-pulse" />
               <div className="relative w-full h-full rounded-full overflow-hidden border-2 border-border bg-card/50 backdrop-blur-sm shadow-xl">
                 <Image
-                  src="/zaid.jpg"
+                  src="/zaid.png"
                   alt="Zaid Khan - Web Developer"
                   fill
                   className="object-cover"
