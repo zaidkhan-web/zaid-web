@@ -231,7 +231,7 @@ const HeroSection = () => {
   const [delta, setDelta] = useState(150);
 
   useEffect(() => {
-    const timer;
+    let timer;
 
     const tick = () => {
       const currentTech = technologies[currentTechIndex];
